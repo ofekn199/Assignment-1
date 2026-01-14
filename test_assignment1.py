@@ -24,6 +24,13 @@ class TestAssignment1(unittest.TestCase):
         """Test greeting with empty string"""
         result = greet("")
         self.assertEqual(result, "Hello, !")
+    
+    def test_greet_with_non_string(self):
+        """Test greeting with non-string input raises TypeError"""
+        with self.assertRaises(TypeError):
+            greet(123)
+        with self.assertRaises(TypeError):
+            greet(None)
 
 
 if __name__ == "__main__":

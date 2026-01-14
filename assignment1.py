@@ -5,7 +5,7 @@ A simple program that demonstrates basic Python concepts.
 """
 
 
-def greet(name):
+def greet(name: str) -> str:
     """
     Greet a person by name.
     
@@ -14,7 +14,12 @@ def greet(name):
         
     Returns:
         str: A greeting message
+        
+    Raises:
+        TypeError: If name is not a string
     """
+    if not isinstance(name, str):
+        raise TypeError("name must be a string")
     return f"Hello, {name}!"
 
 
