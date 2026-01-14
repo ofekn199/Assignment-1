@@ -1,0 +1,30 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "assinment 1 in web dev course",
+  "homepage": "https://github.com/ofekn199/Assignment-1#readme",
+  "bugs": {
+    "url": "https://github.com/ofekn199/Assignment-1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofekn199/Assignment-1.git"
+  },
+  "license": "ISC",
+  "author": "Mevorah Berrebi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node": "^25.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
